@@ -15,6 +15,12 @@ import { StudentsModule } from './students/students.module';
 import { NotificationsModule } from './notifications/notifications.module';
 import { EventEmitterModule } from '@nestjs/event-emitter';
 import { GradesModule } from './grades/grades.module';
+import { SubjectsModule } from './subjects/subjects.module';
+import { TeachersModule } from './teachers/teachers.module';
+import { PeriodsModule } from './periods/periods.module';
+import { AbsencesModule } from './absences/absences.module';
+import { FeesModule } from './fees/fees.module';
+import { TeacherAssignmentsModule } from './teacher-assignments/teacher-assignments.module';
 
 @Module({
   imports: [
@@ -28,6 +34,12 @@ import { GradesModule } from './grades/grades.module';
     StudentsModule,
     NotificationsModule,
     GradesModule,
+    SubjectsModule,
+    TeachersModule,
+    PeriodsModule,
+    AbsencesModule,
+    FeesModule,
+    TeacherAssignmentsModule,
   ],
   controllers: [AppController],
   providers: [
